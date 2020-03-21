@@ -11,9 +11,9 @@ export const LINKING_KEYWORDS = [
 ]
 
 export const STATE_TO_COLUMN = {
-  reviewInProgress: 'Review in progress',
   toDo: 'To do',
   inProgress: 'In progress',
+  reviewInProgress: 'Review in progress',
   pullRequestApproved: 'Reviewer approved',
   done: 'Done',
 }

@@ -11,6 +11,7 @@ export = (app: Application) => {
     const repo = context.payload.repository.name
 
     for (const issueId of connectedIssuesIds) {
+      // @ts-ignore
       const { repository } = await context.github.graphql(getIssuesWithCards(issueId, repo, owner))
 
       // Get new column name
